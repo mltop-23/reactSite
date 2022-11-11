@@ -1,0 +1,82 @@
+// main: ../../../App.less
+
+.Ball_Page_Modal{
+  cursor: default;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(@dark, 0.3);
+}
+
+.Ball_Page_Modal_Active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Ball_Page{
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 40px;
+
+  background-color: @lightBackground;
+  border-radius: 20px;
+
+  box-shadow: 0 0 .5rem fade(black,35%);
+
+  color: @dark;
+}
+
+.Ball_Page_Image{
+  width: 350px;
+  height: 350px;
+
+  border-radius: 10px;
+
+  margin-right: 20px;
+
+  // media
+}
+
+.Ball_Page_Info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Ball_Page_Name{
+  font-weight: 300;
+
+  &:after {
+    content: "";
+    display: block;
+    background-color: @dark;
+
+    height: 1px;
+  }
+}
+
+
+.Ball_Page_Params_Title{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.Ball_Page_Parameter{
+  display: flex;
+  align-items: center;
+}
+
+.Ball_Page_Parameter_Title{
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.Ball_Page_Parameter_Value{
+  font-size: 1rem;
+}

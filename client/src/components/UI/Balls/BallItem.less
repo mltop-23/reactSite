@@ -1,0 +1,105 @@
+// main: ../../../App.less
+
+.ball_item {
+  overflow: hidden;
+
+  cursor: pointer;
+
+  max-width: 187.5px;
+
+  border-radius: 0.625rem;
+
+  color: @dark;
+
+  background-color: @lightBackground;
+  transition: background-color .2s linear;
+
+  box-shadow: 0 0 .5rem fade(black,35%);
+
+    &:hover {
+      background-color: @darkBackground;
+    }
+}
+
+.basket_ball_item{
+  display: flex;
+
+  cursor: default;
+
+  overflow: visible;
+
+  max-width: none;
+
+  width: 100%;
+
+  height: 187.5px;
+
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.basket_ball_item_info{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+.ball_item_buy{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.basket_button_ball_item_buy{
+  justify-content: flex-end;
+}
+
+.ball_item_buy_basket{
+  flex-direction: column;
+}
+
+.ball_item_name{
+  font-size: 1.125rem;
+
+  margin: 0 .625rem .4rem .625rem;
+
+  text-align: left;
+}
+
+.ball_item_info{
+  margin-left: 10px;
+}
+
+.ball_item_info_value{
+  font-size: 1rem;
+}
+
+.ball_item_price{
+  font-size: 1.3rem;
+  font-family: Impact;
+  font-weight: unset;
+
+  margin: 1rem .625rem;
+
+  text-align: left;
+}
+
+.ball_item_image{
+  cursor: pointer;
+
+  width: 187.5px;
+  height: 187.5px;
+
+  border-radius: 0.625rem;
+}
+
+.Basket_Ball_Item_Delete_Button_Container{
+  display: flex;
+  justify-content: flex-end;
+}

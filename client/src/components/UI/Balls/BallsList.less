@@ -1,0 +1,26 @@
+// main: ../../../App.less
+
+.Balls_Filters_container{
+  display: grid;
+
+  grid-template-columns: 1fr 5fr;
+  gap: 3rem;
+}
+
+.balls_list{
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+
+  gap: 3rem;
+
+  justify-items: center;
+  align-items: start;
+
+  @media(max-width: 650px){
+    grid-template-columns: 1fr;
+  }
+}

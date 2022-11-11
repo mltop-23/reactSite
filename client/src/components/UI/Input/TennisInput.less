@@ -1,0 +1,62 @@
+// main: ../../../App.less
+
+.Input{
+  display: inline-block;
+  border: none;
+  border-radius: 1rem;
+  resize: none;
+
+  font-family: "Calibri Light";
+  color: fade(@dark,80%);
+  font-weight: 800;
+  font-size: 1.5rem;
+
+  background: @lightBackground;
+
+  transition: background-color .2s linear;
+
+  &:focus {
+    background: @darkBackground;
+  }
+
+  &:hover {
+  background: @darkBackground;
+  }
+
+  &::selection {
+    background-color: @lightBackground;
+  }
+}
+
+.Search_Input{
+  width: 75%;
+  padding: 1rem 2rem;
+
+  margin-bottom: 3rem;
+}
+
+.Auth_Input{
+  width: 100%;
+  padding: .7rem 1.5rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.Admin_Input{
+  width: 100%;
+  padding: .3rem .8rem;
+
+  &::placeholder{
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: fade(@dark,80%);
+  font-size: 2rem;
+  font-weight: 400;
+
+  transition: color .2s linear;
+}
+:focus::-webkit-input-placeholder {color: transparent}

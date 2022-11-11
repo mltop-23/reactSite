@@ -1,0 +1,40 @@
+// main: ../../../App.less
+
+.Auth{
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Auth_Title {
+  margin-bottom: 1rem;
+}
+
+.Auth_Link{
+  font-size: 1.2rem;
+  color: @dark;
+  transition: color .1s linear;
+
+
+  &:hover {
+    color: @darkBackground;
+  }
+
+  &:active{
+    color: @lightBackground;
+  }
+}
+
+.Auth_Link_Text {
+  font-size: 1rem;
+}
+
+.Auth_Footer {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

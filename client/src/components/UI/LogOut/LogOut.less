@@ -1,0 +1,65 @@
+// main: ../../../App.less
+
+.LogOut_Modal_Background{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(@dark, 0.3);
+}
+
+.LogOut_Modal{
+  height: 20%;
+  width: 15%;
+}
+
+.LogOut_Content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  height: 100%;
+
+  padding: 15px;
+
+  background-color: @lightBackground;
+  border-radius: 20px;
+
+  box-shadow: 0 0 .5rem fade(black,35%);
+
+  color: @dark;
+}
+
+.LogOut_User{
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.LogOut_Name{
+  font-size: 20px;
+  font-weight: bolder;
+
+  margin-bottom: 10px;
+
+  &:after {
+    content: "";
+    display: block;
+    background-color: @dark;
+
+    margin-top: 5px;
+
+    height: 1px;
+  }
+}
+
+.LogOut_Email{
+  font-size: 16px;
+  font-weight: lighter;
+}

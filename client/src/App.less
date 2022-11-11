@@ -1,0 +1,84 @@
+// compress: true
+
+@import "vars";
+
+html {
+  height: 100%;
+
+  //@media(max-width: 1200px) {
+  //  font-size: 0.67 * @fontSize
+  //}
+  //
+  //@media(max-width: 568px) {
+  //  font-size: 0.33* @fontSize;
+  //}
+  //
+  //@media(max-width: 430px) {
+  //  font-size: 0.2 @fontSize;
+  //}
+}
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-size: @fontSize;
+  font-family:'Open Sans', sans-serif;
+
+  height: 100%;
+
+  background: @lightBackground url(Assets/Background.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+
+  color: @dark;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, textarea, select, option {
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.App_Router {
+  flex: 1 1 auto;
+}
+
+// ===== blocks =====
+@import "components/UI/Container/Container";
+@import "components/UI/Header/Header";
+@import "components/UI/Input/TennisInput";
+@import "components/UI/Balls/BallItem";
+@import "components/UI/Balls/BallsList";
+@import "components/UI/Filter/FilterItem";
+@import "components/UI/Filter/Filter";
+@import "components/UI/Filter/FilterList";
+@import "components/UI/Basket/BasketBallItem";
+@import "components/UI/Basket/BasketPage";
+@import "components/UI/Buttons/Buttons";
+@import "components/UI/OneBall/OneBall";
+@import "components/UI/Footer/footer";
+@import "components/UI/Auth/Auth";
+@import "components/UI/LogOut/LogOut";
+@import "components/UI/Admin/Parameters/AdminParameters";
+@import "components/UI/OrderPage";

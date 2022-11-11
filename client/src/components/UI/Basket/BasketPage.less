@@ -1,0 +1,59 @@
+// main: ../../../App.less
+
+.Basket_Page{
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+}
+
+.Basket_Order_List{
+  width: 100%;
+
+  padding: 50px;
+
+  color: @dark;
+  text-align: center;
+}
+
+.Basket_Order_List_Title{
+
+  &:after {
+    content: "";
+    display: inherit;
+    background-color: @darkBackground;
+
+    width: 100%;
+    height: .1rem;
+
+    margin: 10px 0;
+  }
+}
+
+.Basket_Order_List_Ball_Name{
+  font-size: 1.2rem;
+
+  margin: 10px 0;
+}
+
+.Basket_Order_List_Price{
+  text-align: end;
+
+  &:before {
+    content: "";
+    display: inherit;
+    background-color: @darkBackground;
+
+    width: 100%;
+    height: .1rem;
+
+    margin: 10px 0;
+  }
+}
+
+.Basket_Order_List_Buy_Button_Container{
+  margin-top: 25px;
+
+  display: flex;
+
+  justify-content: center;
+}

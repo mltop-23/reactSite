@@ -1,0 +1,32 @@
+// main: ../../../App.less
+
+.Filter{
+  margin: 1rem 0;
+}
+
+.Filter_Name{
+  font-size: @fontSize * .8;
+
+  color: @dark;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+  padding: 5px;
+
+  background-color: @white;
+  transition: background-color .2s linear;
+
+  border: 1px solid @lightBackground;
+  border-radius: 10px;
+
+  &:hover{
+    background-color: @lightBackground;
+  }
+  &:active{
+    background-color: @darkBackground;
+  }
+}
+
